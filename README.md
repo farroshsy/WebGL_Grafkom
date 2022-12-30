@@ -1,6 +1,6 @@
 # WebGL_Grafkom
 
-##Kursi Piano
+## Kursi Piano
    Objek merupakan kursi yang digunakan pada saat menggunakan piano
    
  Tampak Atas:
