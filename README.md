@@ -4,6 +4,10 @@ Nama Lengkap                 | NRP           | Kelas
 ---------------------------- | ------------- | -----------
 Farros Hilmi Syafei          | 5025201012    | Grafkom E
 
+# Tujuan
+
+Memenuhi tugas WebGL yang telah dikerjakan sebelumnya
+
 ## Kursi Piano
    Objek merupakan kursi yang digunakan pada saat menggunakan piano
    
