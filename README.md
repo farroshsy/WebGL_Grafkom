@@ -1,8 +1,8 @@
 # WebGL_Grafkom
 
-Nama Lengkap                 | NRP
----------------------------- | -------------
-Farros Hilmi Syafei          | 5025201012
+Nama Lengkap                 | NRP           | Kelas
+---------------------------- | ------------- | -----------
+Farros Hilmi Syafei          | 5025201012    | GrafkomE
 
 ## Kursi Piano
    Objek merupakan kursi yang digunakan pada saat menggunakan piano
