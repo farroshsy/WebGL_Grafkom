@@ -14,6 +14,7 @@
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^1.0.7",
+    "gh-pages": "^4.0.0",
     "vite": "^2.8.0"
   }
 }
