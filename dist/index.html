@@ -6,12 +6,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script type="module" crossorigin src="/Piano-Bench/assets/index.81acd701.js"></script>
-    <link rel="modulepreload" href="/Piano-Bench/assets/vendor.8081dcdd.js">
-    <link rel="stylesheet" href="/Piano-Bench/assets/index.458f9883.css">
   </head>
   <body>
     <div id="root"></div>
-    
+    <!-- <script type="module" src="/src/main.jsx"></script> -->
+    <div>
+  <canvas id="myThreeJsCanvas"></canvas>
+</div>
+
+<script type="text/babel">
+  import { useEffect } from 'react';
+
+  import * as THREE from 'three';
+  import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
+
+  import SceneInit from './lib/SceneInit';
+
+  function App() {
+    useEffect(() => {
+      const test = new SceneInit('myThreeJsCanvas');
+      test.initialize();
+      test.renderer.setClearColor(0xeeeeee, 1);
+      test.animate();
+
+      let loadedModel;
+      const glftLoader = new GLTFLoader();
+      glftLoader.load('./assets/piano_bench/scene.gltf', (gltfScene) => {
+        loadedModel = gltfScene;
+
+        gltfScene.scene.rotation.y = Math.PI / 8;
+        gltfScene.scene.position.y = 3;
+        gltfScene.scene.scale.set(10, 10, 10);
+        test.scene.add(gltfScene.scene);
+      });
+
+      const animate = () => {
+        if (loadedModel) {
+          loadedModel.scene.rotation.x += 0.01;
+          loadedModel.scene.rotation.y += 0.01;
+          loadedModel.scene.rotation.z += 0.01;
+        }
+        requestAnimationFrame(animate);
+      };
+      animate();
+    }, []);
+
+    return (
+      <div>
+        <canvas id="myThreeJsCanvas" />
+      </div>
+    );
+  }
+
+  export default App;
+</script>
+
   </body>
 </html>
