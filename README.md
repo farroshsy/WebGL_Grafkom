@@ -2,7 +2,7 @@
 
 Nama Lengkap                 | NRP           | Kelas
 ---------------------------- | ------------- | -----------
-Farros Hilmi Syafei          | 5025201012    | GrafkomE
+Farros Hilmi Syafei          | 5025201012    | Grafkom E
 
 ## Kursi Piano
    Objek merupakan kursi yang digunakan pada saat menggunakan piano
